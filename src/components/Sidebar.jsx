@@ -1,4 +1,4 @@
-export default function Sidebar({ children }) {
+export default function Sidebar() {
     return (
         <aside className="bg-Sidebar w-[26rem] flex flex-col rounded-lg ml-2 mr-2">
             <header className="flex flex-col px-4 pt-3 pb-2">
@@ -26,6 +26,7 @@ export default function Sidebar({ children }) {
                 <div className="mt-2">
                     <ul>
                         <li>
+                            <button className="text-start">
                             <div className="flex flex-row p-2">
                                 <img className="w-12 h-12 rounded mr-3" src="src/assets/liked-songs-64.png" alt="" />
                                 <div className="flex flex-col justify-center">
@@ -33,8 +34,10 @@ export default function Sidebar({ children }) {
                                     <p className="font-medium text-[#B3B3B3] text-sm ">Playlist • 43 músicas </p>
                                 </div>
                             </div>
+                            </button>
                         </li>
                         <li>
+                        <button className="text-start">
                             <div className="flex flex-row p-2">
                                 <img className="w-12 h-12 rounded mr-3" src="src/assets/Slayer.webp" alt="" />
                                 <div className="flex flex-col justify-center">
@@ -42,8 +45,10 @@ export default function Sidebar({ children }) {
                                     <p className="font-medium text-[#B3B3B3] text-sm ">Álbum • Slayer </p>
                                 </div>
                             </div>
+                            </button>
                         </li>
                         <li>
+                        <button className="text-start">
                             <div className="flex flex-row p-2">
                                 <img className="w-12 h-12 rounded mr-3" src="src/assets/Wake.jfif" alt="" />
                                 <div className="flex flex-col justify-center">
@@ -51,8 +56,10 @@ export default function Sidebar({ children }) {
                                     <p className="font-medium text-[#B3B3B3] text-sm ">Álbum • Hail The Sun </p>
                                 </div>
                             </div>
+                            </button>
                         </li>
                         <li>
+                        <button className="text-start">
                             <div className="flex flex-row p-2">
                                 <img className="w-12 h-12 rounded mr-3" src="src/assets/Flying Beagle.jfif" alt="" />
                                 <div className="flex flex-col justify-center">
@@ -60,8 +67,10 @@ export default function Sidebar({ children }) {
                                     <p className="font-medium text-[#B3B3B3] text-sm ">Álbum • 43 músicas </p>
                                 </div>
                             </div>
+                            </button>
                         </li>
                         <li>
+                        <button className="text-start">
                             <div className="flex flex-row p-2">
                                 <img className="w-12 h-12 rounded-full mr-3" src="src/assets/ab67616100005174c7e6bd9e65eab62a53355576.jfif" alt="" />
                                 <div className="flex flex-col justify-center">
@@ -69,8 +78,10 @@ export default function Sidebar({ children }) {
                                     <p className="font-medium text-[#B3B3B3] text-sm ">Artista </p>
                                 </div>
                             </div>
+                            </button>
                         </li>
                         <li>
+                        <button className="text-start">
                             <div className="flex flex-row p-2">
                                 <img className="w-12 h-12 rounded mr-3" src="src/assets/Quadra.jfif" alt="" />
                                 <div className="flex flex-col justify-center">
@@ -78,8 +89,10 @@ export default function Sidebar({ children }) {
                                     <p className="font-medium text-[#B3B3B3] text-sm ">Álbum • Sepultura </p>
                                 </div>
                             </div>
+                            </button>
                         </li>
                         <li>
+                        <button className="text-start">
                             <div className="flex flex-row p-2">
                                 <img className="w-12 h-12 rounded-full mr-3" src="src/assets/Sepultura.jfif" alt="" />
                                 <div className="flex flex-col justify-center">
@@ -87,8 +100,10 @@ export default function Sidebar({ children }) {
                                     <p className="font-medium text-[#B3B3B3] text-sm ">Artista </p>
                                 </div>
                             </div>
+                            </button>
                         </li>
                         <li>
+                        <button className="text-start">
                             <div className="flex flex-row p-2">
                                 <img className="w-12 h-12 rounded mr-3" src="src/assets/Megadeth.jfif" alt="" />
                                 <div className="flex flex-col justify-center">
@@ -96,6 +111,7 @@ export default function Sidebar({ children }) {
                                     <p className="font-medium text-[#B3B3B3] text-sm ">Álbum • Megadeth </p>
                                 </div>
                             </div>
+                            </button>
                         </li>
                        
                        
