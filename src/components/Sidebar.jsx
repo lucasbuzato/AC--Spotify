@@ -1,6 +1,6 @@
 export default function Sidebar() {
     return (
-        <aside className="bg-Sidebar w-[26rem] flex flex-col rounded-lg ml-2 mr-2">
+        <aside className="bg-Sidebar w-[34rem] flex flex-col rounded-lg ml-2 mr-2">
             <header className="flex flex-col px-4 pt-3 pb-2">
                 <div className="flex flex-row justify-between items-center py-1 px-2">
                     <div className="flex flex-row items-center">
