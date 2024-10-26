@@ -8,7 +8,6 @@ import ConteudoPrincipal from './pages/ConteudoPrincipal.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import SearchPage from './pages/SearchPage.jsx'
 import SearchPageHome from './pages/SearchPageHome.jsx'
-import ContextoLogin from './context/ContextoLogin.jsx'
 
 const router = createBrowserRouter([
   {
@@ -25,8 +24,7 @@ const router = createBrowserRouter([
 ])
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <ContextoLogin>
+    
       <RouterProvider router={router}/>
-    </ContextoLogin>
   </StrictMode>,
 )
