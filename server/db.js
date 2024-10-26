@@ -1,7 +1,11 @@
 import mongoose from "mongoose";
+import dotenv from "dotenv";
 
-export default async function conectDb() {
-    mongoose.connect("mongodb+srv://admin:admin123@cluster0.7txhn.mongodb.net/Spotify?retryWrites=true&w=majority&appName=Cluster0")
+dotenv.config();
+const dbPassword = process.env.REACT_DB_PASSWORD;
 
-    return mongoose.connection
+export default async function conectaNaDb(){
+    mongoose.connect(`mongodb+srv://admin:${dbPassword}@cluster0.7txhn.mongodb.net/Spotify?retryWrites=true&w=majority&appName=Cluster0`);
+
+    return mongoose.connection;
 }

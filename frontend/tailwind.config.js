@@ -16,7 +16,7 @@ export default {
       spacing:{
         '474':'31rem',
         '200':'28rem',
-        '100':'34rem',
+        '100':'26rem',
         '13':'14rem',
       },
       borderRadius:{
