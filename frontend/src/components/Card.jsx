@@ -6,9 +6,10 @@ function Card({_id, name, image}) {
     return ( 
 
         <Link to={`/artistas/${_id}`}>
-            <div className="w-36 h-36 m-5 flex flex-col justify-start items-center pt-3 relative rounded-md overflow-hidden">
-                <h1 className="w-3/4 h-7 text-white font-bold">{name}</h1>
-                <img src={image} alt="Capa do Album" className="w-2/3 h-2/3" />
+            <div className="w-48 h-48 mb-5 mt-5 mr-12 flex flex-col justify-center items-center pt-3">
+                
+                <img src={image} alt="Capa do Album" className="w-48 h-48" />
+                <h1 className=" text-white font-bold">{name}</h1>
             </div>
         </Link>
      );

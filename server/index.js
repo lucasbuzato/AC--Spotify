@@ -36,6 +36,7 @@ app.get('/generos', async (req, res) => {
 });
 
 app.get('/artistas/:id', async (req, res) => {
+    console.log(req.params);
     const artista = await artistas.findById(req.params.id);
     res.status(200).json(artista);
 });
@@ -51,18 +52,7 @@ app.post('/artistas', async ( req, res) => {
     res.status(201).json(artistaSalvo);
 })
 
-app.delete('/artistas/:id', async (req, res) => {
-    const { id } = req.params;
-    await artistas.findByIdAndDelete(id);
-    res.status(204).end();
-});
 
-app.put('/artistas/:id', async (req, res) => {
-    const { id } = req.params;
-    const artistaAtualizado = req.body;
-    await artistas.findByIdAndUpdate(id, artistaAtualizado);
-    res.status(200).end();
-});
 
 app.listen(3000, () => {
     console.log('Servidor rodando na porta 3000');
