@@ -8,22 +8,23 @@ export default function Artista() {
     const [artista, setArtista] = useState({})
 
     useEffect(() => {
-       
-            const puxarArtista = async () => {
-        try{
-            const artista = await fetch(`http://localhost:3000/artistas/${id}`);
-            const resposta = await artista.json();
-            console.log( artista.json());
-            setArtista(resposta);
+        const puxarArtista = async () => {
+            try {
+                const artista = await fetch(`http://localhost:3000/artistas/${id}`);
+                const resposta = await artista.json();
+                console.log('Resposta da API:', resposta);
+                if (resposta) {
+                    setArtista(resposta); // Define o artista apenas se a resposta for válida
+                } else {
+                    console.error('Dados do artista não encontrados');
+                }
+            } catch (error) {
+                console.error('Erro ao buscar dados:', error);
             }
-        catch (error) {
-                console.error('Error fetching data:', error);
-        }
-      
-    }
-    puxarArtista();
-
-    },[])
+        };
+    
+        puxarArtista();
+    }, []);
    
     
     return (
@@ -32,7 +33,11 @@ export default function Artista() {
 
           <div className="p-10">
             <div className="flex items-center mb-4 gap-5">
-                <img src={artista.image} alt="Capa do artista" className="w-[100px] h-[100px]"/>
+            {artista && artista.image ? (
+            <img src={artista.image} className="w-[100px] h-[100px]" alt="Artista" />
+        ) : (
+            <p>Imagem do artista não disponível</p>
+        )}
                 <h1 className="text-7xl font-bold">{artista.name}</h1>
             </div>
             <p>{artista.bio}</p>
