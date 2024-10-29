@@ -43,7 +43,7 @@ export default function ConteudoPrincipal() {
       
         <SliderCards2>
         {artistas
-            .filter( genero => genero.genres.includes( "Pop" || "Rap"))
+            .filter( genero => genero.genres.includes( "Pop" || "Rock"))
             .sort((a, b) => a.name.localeCompare(b.name))
             .slice(0,4)
             .map(artista => (
