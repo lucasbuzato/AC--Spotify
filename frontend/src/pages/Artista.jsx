@@ -10,7 +10,7 @@ export default function Artista() {
     useEffect(() => {
         const puxarArtista = async () => {
             try {
-                const artista = await fetch(`https://acspotify.vercel.app/artistas${id}`);
+                const artista = await fetch(`https://acspotify.vercel.app/artistas/${id}`);
                 const resposta = await artista.json();
                 console.log('Resposta da API:', resposta);
                 if (resposta) {
