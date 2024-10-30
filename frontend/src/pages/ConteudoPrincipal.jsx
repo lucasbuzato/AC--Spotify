@@ -11,7 +11,7 @@ export default function ConteudoPrincipal() {
   
   useEffect(() => {
       setTimeout(() => {
-      fetch('http://localhost:3000/artistas')
+      fetch('https://acspotify.vercel.app/artistas')
       .then(res => res.json())
       .then(data => {setArtistas(data), console.log(data)})
       .catch(err => console.log(err))
@@ -29,7 +29,7 @@ export default function ConteudoPrincipal() {
                 <div>
         <SliderCards2>
         {artistas
-            .filter( genero => genero.genres.includes( "Pop" || "Rap"))
+            .filter( genero => genero.genres.includes( "Pop"))
             .sort((a, b) => a.name.localeCompare(b.name))
             .slice(0,4)
             .map(artista => (
@@ -43,7 +43,7 @@ export default function ConteudoPrincipal() {
       
         <SliderCards2>
         {artistas
-            .filter( genero => genero.genres.includes( "Pop" || "Rock"))
+            .filter( genero => genero.genres.includes( "Rock"))
             .sort((a, b) => a.name.localeCompare(b.name))
             .slice(0,4)
             .map(artista => (
