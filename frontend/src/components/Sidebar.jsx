@@ -6,11 +6,11 @@ export default function Sidebar() {
                 <div className="flex flex-row justify-between items-center py-1 px-2">
                     <div className="flex flex-row items-center">
                     
-                        <button className="font-bold text-[#B3B3B3] flex flex-row items-center"><img className="h-5 w-5 mr-3" src="/public/assets/svg-path (1).svg" alt="" />Sua Biblioteca</button>
+                        <button className="font-bold text-[#B3B3B3] flex flex-row items-center"><img className="h-5 w-5 mr-3" src="/public/svg-path (1).svg" alt="" />Sua Biblioteca</button>
                     </div>
                     <div >
-                        <button className="mr-3"><img className="h-4 w-4" src="/public/assets/Mais.svg" alt="" /></button>
-                        <button className="m-2"><img className="h-4 w-4"  src="/public/assets/Seta.svg" alt="" /></button>
+                        <button className="mr-3"><img className="h-4 w-4" src="/public/Mais.svg" alt="" /></button>
+                        <button className="m-2"><img className="h-4 w-4"  src="/public/Seta.svg" alt="" /></button>
                     </div>
                 </div>
             </header>
@@ -21,15 +21,15 @@ export default function Sidebar() {
                 </div>
                 <div className="px-2 pb-2 flex flex-col">
                 <div className="flex flex-row justify-between pl-2 pr-1 pt-0.5">
-                    <button className="p-2"><img className="h-4 w-4"  src="src/assets/Lupa.svg" alt="" /></button>
-                    <button className="flex flex-row items-center text-[#B3B3B3] text-sm pl-4 pr-3 py-1 font-medium">Recentes<img className=" ml-2 h-4 w-4" src="/public/assets/More.svg" alt="" /></button>
+                    <button className="p-2"><img className="h-4 w-4"  src="src/Lupa.svg" alt="" /></button>
+                    <button className="flex flex-row items-center text-[#B3B3B3] text-sm pl-4 pr-3 py-1 font-medium">Recentes<img className=" ml-2 h-4 w-4" src="/public/More.svg" alt="" /></button>
                 </div>
                 <div className="mt-2">
                     <ul>
                         <li>
                             <button className="text-start">
                             <div className="flex flex-row p-2">
-                                <img className="w-12 h-12 rounded mr-3" src="/public/assets/liked-songs-64.png" alt="" />
+                                <img className="w-12 h-12 rounded mr-3" src="/public/liked-songs-64.png" alt="" />
                                 <div className="flex flex-col justify-center">
                                     <p className="font-medium text-white">Músicas Curtidas</p>
                                     <p className="font-medium text-[#B3B3B3] text-sm ">Playlist • 43 músicas </p>
@@ -40,7 +40,7 @@ export default function Sidebar() {
                         <li>
                         <button className="text-start">
                             <div className="flex flex-row p-2">
-                                <img className="w-12 h-12 rounded mr-3" src="/public/assets/Slayer.webp" alt="" />
+                                <img className="w-12 h-12 rounded mr-3" src="/public/Slayer.webp" alt="" />
                                 <div className="flex flex-col justify-center">
                                     <p className="font-medium text-white">Show No Mercy</p>
                                     <p className="font-medium text-[#B3B3B3] text-sm ">Álbum • Slayer </p>
@@ -51,7 +51,7 @@ export default function Sidebar() {
                         <li>
                         <button className="text-start">
                             <div className="flex flex-row p-2">
-                                <img className="w-12 h-12 rounded mr-3" src="/public/assets/Wake.jfif" alt="" />
+                                <img className="w-12 h-12 rounded mr-3" src="/public/Wake.jfif" alt="" />
                                 <div className="flex flex-col justify-center">
                                     <p className="font-medium text-white">Wake</p>
                                     <p className="font-medium text-[#B3B3B3] text-sm ">Álbum • Hail The Sun </p>
@@ -62,7 +62,7 @@ export default function Sidebar() {
                         <li>
                         <button className="text-start">
                             <div className="flex flex-row p-2">
-                                <img className="w-12 h-12 rounded mr-3" src="/public/assets/Flying Beagle.jfif" alt="" />
+                                <img className="w-12 h-12 rounded mr-3" src="/public/Flying Beagle.jfif" alt="" />
                                 <div className="flex flex-col justify-center">
                                     <p className="font-medium text-white">Flying Beagle</p>
                                     <p className="font-medium text-[#B3B3B3] text-sm ">Álbum • 43 músicas </p>
@@ -73,7 +73,7 @@ export default function Sidebar() {
                         <li>
                         <button className="text-start">
                             <div className="flex flex-row p-2">
-                                <img className="w-12 h-12 rounded-full mr-3" src="/public/assets/ab67616100005174c7e6bd9e65eab62a53355576.jfif" alt="" />
+                                <img className="w-12 h-12 rounded-full mr-3" src="/public/ab67616100005174c7e6bd9e65eab62a53355576.jfif" alt="" />
                                 <div className="flex flex-col justify-center">
                                     <p className="font-medium text-white">Linkin Park</p>
                                     <p className="font-medium text-[#B3B3B3] text-sm ">Artista </p>
@@ -84,7 +84,7 @@ export default function Sidebar() {
                         <li>
                         <button className="text-start">
                             <div className="flex flex-row p-2">
-                                <img className="w-12 h-12 rounded mr-3" src="/public/assets/Quadra.jfif" alt="" />
+                                <img className="w-12 h-12 rounded mr-3" src="/public/Quadra.jfif" alt="" />
                                 <div className="flex flex-col justify-center">
                                     <p className="font-medium text-white">Quadra</p>
                                     <p className="font-medium text-[#B3B3B3] text-sm ">Álbum • Sepultura </p>
@@ -95,7 +95,7 @@ export default function Sidebar() {
                         <li>
                         <button className="text-start">
                             <div className="flex flex-row p-2">
-                                <img className="w-12 h-12 rounded-full mr-3" src="/public/assets/Sepultura.jfif" alt="" />
+                                <img className="w-12 h-12 rounded-full mr-3" src="/public/Sepultura.jfif" alt="" />
                                 <div className="flex flex-col justify-center">
                                     <p className="font-medium text-white">Sepultura</p>
                                     <p className="font-medium text-[#B3B3B3] text-sm ">Artista </p>
@@ -106,7 +106,7 @@ export default function Sidebar() {
                         <li>
                         <button className="text-start">
                             <div className="flex flex-row p-2">
-                                <img className="w-12 h-12 rounded mr-3" src="/public/assets/Megadeth.jfif" alt="" />
+                                <img className="w-12 h-12 rounded mr-3" src="/public/Megadeth.jfif" alt="" />
                                 <div className="flex flex-col justify-center">
                                     <p className="font-medium text-white">Rust In Piece</p>
                                     <p className="font-medium text-[#B3B3B3] text-sm ">Álbum • Megadeth </p>

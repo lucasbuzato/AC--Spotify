@@ -17,14 +17,14 @@ export default function Header() {
 
 
             <div className="flex w-16 h-16 flex items-center justify-between m-5">
-                <img className="h-8 w-8" src="/public/assets/Spotify_Primary_Logo_RGB_White.png" alt="" />
+                <img className="h-8 w-8" src="/public/Spotify_Primary_Logo_RGB_White.png" alt="" />
             </div>
 
 
             <div className="flex flex-row ml-96">
                 <Link to="/">
                 <button className="w-12 h-12 bg-Cinza flex items-center justify-center rounded-full" >
-                    <img className="h-8 w-8" src="/public/assets/home_20dp_E8EAED_FILL1_wght400_GRAD0_opsz20.png" alt="" />
+                    <img className="h-8 w-8" src="/public/home_20dp_E8EAED_FILL1_wght400_GRAD0_opsz20.png" alt="" />
                 </button>
                 </Link>
                 
@@ -40,7 +40,7 @@ export default function Header() {
            
            <div className="pl-3 pr-1 ">
                      
-                     <img className="h-6 w-6 absolute left-[28rem] top-3 " src="/public/assets/Discografia.svg" alt="" />
+                     <img className="h-6 w-6 absolute left-[28rem] top-3 " src="/public/Discografia.svg" alt="" />
                      
                  </div>
             </form>
@@ -50,12 +50,12 @@ export default function Header() {
             <div className="flex flex-row items-center justify-between">
                 <div className="flex flex-row">
                 <button className="bg-white font-bold px-4 py-1 rounded-full mx-2 text-sm text-black">Ver planos Premium</button>
-                <button className="flex flex-row items-center text-white font-bold text-sm mx-2"><img  className="h-4 w-4 mr-1" src="src/assets/Download.svg" alt="" />Instalar aplicativo</button>
+                <button className="flex flex-row items-center text-white font-bold text-sm mx-2"><img  className="h-4 w-4 mr-1" src="src/Download.svg" alt="" />Instalar aplicativo</button>
                 </div>
                 <div className="flex flex-row items-center justify-between">
-                <img className="h-4 w-4 mx-5" src="/public/assets/Notificacao.svg" alt="" />
+                <img className="h-4 w-4 mx-5" src="/public/Notificacao.svg" alt="" />
 
-                <img className="h-10 w-10 rounded-full border-4 border-[#1f1f1f]" src="/public/assets/images.png" alt="" />
+                <img className="h-10 w-10 rounded-full border-4 border-[#1f1f1f]" src="/public/images.png" alt="" />
                 </div>
             </div>
         </header>
