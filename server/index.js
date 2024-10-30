@@ -37,7 +37,7 @@ app.get('/generos', async (req, res) => {
 
 app.get('/artistas/:id', async (req, res) => {
     console.log(req.params);
-    const artista = await artistas.findById(req.params.name);
+    const artista = await artistas.findById(req.params.id);
     res.status(200).json(artista);
 });
 app.get('/search/:nome', async (req, res) => {
