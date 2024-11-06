@@ -31,7 +31,7 @@ export default function ConteudoPrincipal() {
         {artistas
             .filter( genero => genero.genres.includes( "Pop"))
             .sort((a, b) => a.name.localeCompare(b.name))
-            .slice(0,4)
+            .slice(0,3)
             .map(artista => (
                 <Card2 key={artista._id} {...artista}/>
             ))}
@@ -45,7 +45,7 @@ export default function ConteudoPrincipal() {
         {artistas
             .filter( genero => genero.genres.includes( "Rock"))
             .sort((a, b) => a.name.localeCompare(b.name))
-            .slice(0,4)
+            .slice(0,3)
             .map(artista => (
                 <Card2 key={artista._id} {...artista}/>
             ))}
