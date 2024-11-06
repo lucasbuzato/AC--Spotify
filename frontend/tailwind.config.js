@@ -17,6 +17,7 @@ export default {
         '474':'31rem',
         '200':'28rem',
         '100':'26rem',
+        '50':'23rem',
         '13':'14rem',
       },
       borderRadius:{

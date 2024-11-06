@@ -16,12 +16,12 @@ export default function Header() {
         <header className="bg-black w-full h-16 p-2 flex flex-row items-center justify-between">
 
 
-            <div className="flex w-16 h-16 flex items-center justify-between m-5">
-                <img className="h-8 w-8" src="./Spotify_Primary_Logo_RGB_White.png" alt="" />
+            <div className="flex w-16 h-16 flex items-center justify-between m-5 ">
+                <img className="h-8 w-8 max-w-8" src="./Spotify_Primary_Logo_RGB_White.png" alt="" />
             </div>
 
 
-            <div className="flex flex-row ml-96">
+            <div className="flex flex-row md:ml-16 ml-96">
                 <Link to="/">
                 <button className="w-12 h-12 bg-Cinza flex items-center justify-center rounded-full" >
                     <img className="h-8 w-8" src="./home_20dp_E8EAED_FILL1_wght400_GRAD0_opsz20.png" alt="" />
@@ -32,7 +32,7 @@ export default function Header() {
             <div className="ps-2 flex  items-center">   
             <form className="relative">
             <input 
-                type="text" id="search" className="w-[31rem] pb-3 pt-3 pl-12 pr-16 rounded-[31rem] bg-Cinza "placeholder="O que você quer ouvir?" 
+                type="text" id="search" className="md:w-[26rem] w-[31rem] pb-3 pt-3 pl-12 pr-16 rounded-[31rem] bg-Cinza "placeholder="O que você quer ouvir?" 
                 value={search}
                 onChange={handleSearch}
                 onFocus={()=> navigate('search')}
@@ -40,7 +40,7 @@ export default function Header() {
            
            <div className="pl-3 pr-1 ">
                      
-                     <img className="h-6 w-6 absolute left-[28rem] top-3 " src="./Discografia.svg" alt="" />
+                     <img className="h-6 w-6 absolute left-[23rem] top-3 " src="./Discografia.svg" alt="" />
                      
                  </div>
             </form>
